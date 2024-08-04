@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-image {
+    align-self: center;
+    display: flex;
+    justify-content: center ;
+    width: 100vw;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.intro {
+    background-color: #3F3B3D;
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h1 {
+    align-self: center;
+    width: 400px;
+    margin-top: 200px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+button {
+    background: none;
+    border: none;
+    padding: 15px;
+    color: white;
+}
+button:hover {
+    background: #F14814;;
+}
+.image-hiking {
+    margin-right: 80px;
+}
+.description {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+    width: 800px;
+    font-family: "Roboto", sans-serif;
+}
+.title-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    color: #F14814;
+}
+.par {
+    font-size: 30px;
+    text-align: center;
+}
+.main-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.par1 {
+    font-size: 12px;
+    align-self: center;
+}
+.shop {
+    display: grid;
+    grid-template-rows: 45% 55%;
+    margin-top: 50px;
+    gap: 1rem;
+}
+.bagdes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.shop-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.shop {
+    align-self: center;
+}
