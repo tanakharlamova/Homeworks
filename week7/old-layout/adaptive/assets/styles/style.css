@@ -1,0 +1,147 @@
+html {
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    min-height: 100vh;
+}
+.block {
+    border: 2px solid rgb(163, 226, 219);
+    text-align: center;
+}
+.header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.middle-part {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+.middle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content-container {
+    display: grid;
+    grid-template-rows: 25% 75%;
+    
+}
+.content-par {
+    font-size: 0.5rem;
+    margin: 0;
+
+}
+.content-middle {
+    display: grid;
+    gap: 10px 10px;
+}
+h4 {
+    font-size: 0.6rem;
+}
+.content-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.content-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.content-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 50px;
+    font-size: 0.5rem;
+}
+.sidebar {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+    padding: 20px;
+    font-size: 0.5rem;
+}
+.footer-part {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-rows: 10% 85% 5%;
+    }
+    .header {
+        font-size: 0.8rem;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 10px;
+    }
+    .content-par {
+        font-size: 0.4rem;
+    }
+   
+    h4 {
+        font-size: 0.5rem;
+    }
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.4rem;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        font-size: 0.3rem;
+        /*max-height: calc(100vh/10);*/
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .header {
+        font-size: 0.6rem;
+    }
+    .parrot {
+        width: 100px;
+        height: 150px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.3rem;
+    }
+}
