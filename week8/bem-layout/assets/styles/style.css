@@ -1,0 +1,128 @@
+html {
+    font-size: 20px;
+}
+.mainpage {
+    display: flex;
+    justify-content: stretch;
+}
+.mainpage__description {
+    width: 600px;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+}
+.mainpage__description__title {
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+.mainpage__description__text {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-left: 3rem;
+}
+.mainpage__description__buybutton {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.mainpage__description__list {
+    margin-left: 1rem;
+    margin-top: 7rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto Slab", serif;
+    
+}
+.mainpage__description__list__item > a {
+    text-decoration: none;
+    color: #5222D0;
+    font-weight: 300;
+}
+.mainpage__picture {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.mainpage__picture__cartbutton {
+    align-self: flex-end;
+    margin-right: 4rem;
+}
+.anotherpage {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.anotherpage__header {
+    display: flex;
+    justify-content: space-between;
+}
+.anotherpage__features__title {
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.anotherpage__features__cards {
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.anotherpage__features__cards__item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.anotherpage__features__cards__item__title {
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.anotherpage__features__cards__item__text {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.anotherpage__features__cards__subscribe {
+    background-color: #EC615B;
+    margin: 2rem;
+    padding-left: 2rem;
+}
+.anotherpage__features__cards__subscribe__title {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+}
+.anotherpage__features__cards__subscribe__form {
+    
+    border: none;
+    width: 100%;
+}
+.anotherpage__features__cards__subscribe__form__input {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0.7rem;
+}
+.anotherpage__features__cards__subscribe__button {
+    margin-top: 1rem;
+}
+.anotherpage__list {
+    margin-top: 7rem;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    font-family: "Roboto Slab", serif;
+}
+.anotherpage__list__item > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    padding: 1rem;
+}
