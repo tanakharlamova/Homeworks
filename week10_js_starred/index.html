@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <article style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="header">Моя галерея</h1>
+    <div class="pictures" style="display: flex; align-items: center;">
+        <img id="art1" style="padding: 20px;" src="https://cdn.shopify.com/s/files/1/0047/4231/6066/files/The_Madonna_Litta_by_Leonardo_da_Vinci_1491_800x.jpg" alt="he Madonna Litta by Leonardo da Vinci (1491)" width="300" height="400">
+        <img id="art2" style="padding: 20px;" src="https://cdn.shopify.com/s/files/1/0047/4231/6066/files/The_Sistine_Madonna_by_Raffaello_Santi_1512_800x.jpg" alt="The Sistine Madonna by Raffaello Santi (1512)" width="300" height="400">
+    </div>
+    <button style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding: 15px; background-color: cornflowerblue; color: rgb(69, 51, 23); border: none; border-radius: 5%;" id="btn" onclick="calculateTotalPrice()">Узнать стоимость</button>
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 400;" id="par"></p>
+</article>
+    <script>
+        
+        function calculateTotalPrice(quantity = 2, price = 15000000) {
+            let totalPrice = parseInt(quantity * price);
+            totalPriceRU = totalPrice.toLocaleString('ru-RU');
+            alert(`Стоимость покупки: ${totalPriceRU} рублей`);
+            document.getElementById("par").textContent = `Стоимость покупки: ${totalPriceRU} рублей`;
+        }
+        
+    </script>
+</body>
+</html>
