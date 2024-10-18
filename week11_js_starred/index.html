@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Корзина</h1>
+        <div class="item" id="item">
+            <div class="item_desc">
+                <img src="./assets/images/kettle.avif" alt="чайник" width="150" height="150">
+                <div class="description">
+                    <p class="itemName">Электрочайник Midea MK-8008 серебристый</p>
+                    <p>193 отзыва</p>
+                    <p>Код товара: 20084422</p>
+                </div>
+            </div>
+            <p class="price"><span id="itemPrice1">3400.00</span> руб.</p> 
+        </div>
+        <div class="item" id="item">
+            <div class="item_desc">
+                <img src="./assets/images/blender.avif" alt="блендер" width="150" height="150">
+                <div class="description">
+                    <p class="itemName">Погружной блендер Braun HB701AI-MQ7035X</p>
+                    <p>102 отзыва</p>
+                    <p>Код товара: 4172544</p>
+                </div>
+            </div>
+            <p class="price"><span id="itemPrice2">6490.00</span> руб.</p> 
+        </div>
+        <div class="item" id="item">
+            <div class="item_desc">
+                <img src="./assets/images/grill.avif" alt="гриль" width="150" height="150">
+                <div class="description">
+                    <p class="itemName">Электрогриль Tefal Optigrill+ XL GC722D34</p>
+                    <p>474 отзыва</p>
+                    <p>Код товара: 20037456</p>
+                </div>
+            </div>
+            <p class="price"><span id="itemPrice3">11400.00</span> руб.</p> 
+        </div>
+        <div class="item" id="item">
+            <div class="item_desc">
+                <img src="./assets/images/meatmincer.avif" alt="мясорубка" width="150" height="150">
+                <div class="description">
+                    <p class="itemName">Электромясорубка Moulinex HV1 3 в 1 ME106832</p>
+                    <p>791 отзыв</p>
+                    <p>Код товара: 20040889</p>
+                </div>
+            </div>
+            <p class="price"><span id="itemPrice4">4800.00</span> руб.</p> 
+        </div>
+
+        <div class="final">
+            <button id="applyDiscount" class="button">Использовать купон на 20%</button>
+            <div class="finalPart">
+                <p id="finalPart_text">Итого:</p>
+                <p id="finalPart_sum"></p>
+            </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
