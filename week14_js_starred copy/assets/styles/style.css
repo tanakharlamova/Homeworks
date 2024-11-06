@@ -1,0 +1,38 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1, h2 {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    padding: 10px;
+}
+.directorStyle {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    font-family: "Montserrat", serif;
+}
+.career_films {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", serif;
+}
+.carrerStyle {
+    color: rgb(3, 3, 146);
+    font-weight: 300;
+    font-family: "Montserrat", serif;
+}
+.filmsStyle {
+    color: rgb(86, 27, 141);
+    text-decoration: none;
+
+}
+.bestFilmsStyle {
+    color: rgb(3, 3, 146);
+    font-weight: 300;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    margin-bottom: 70px;
+}
