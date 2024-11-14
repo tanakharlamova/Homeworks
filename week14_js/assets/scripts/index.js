@@ -96,3 +96,54 @@ function printAll(){
 }
 printAll();
 
+
+// Рассчет оценок прекрасный, они были бы довольны!
+// - все выполнено отлично, немного прооптимизировал твой код, сделал его читаемее
+// const printGrades = [
+// document.querySelector(".grade1"), document.querySelector(".grade2"),
+// document.querySelector(".grade3"), document.querySelector(".grade4"),
+// document.querySelector(".grade5"), document.querySelector(".grade6"),
+// document.querySelector(".grade7"), document.querySelector(".grade8"),
+// document.querySelector(".grade9"), document.querySelector(".grade10"),
+// document.querySelector(".grade11"), document.querySelector(".grade12")
+// ];
+// const avg = document.querySelector(".avg");
+// const minGradePrint = document.querySelector(".minGrade");
+// const maxGradePrint = document.querySelector(".maxGrade");
+// const positiveGradesPrint = document.querySelector(".positive");
+// const negativeGradesPrint = document.querySelector(".negative");
+
+// function generateGrades(numStudents = 12) {
+// return Array.from({ length: numStudents }, () => Math.floor(Math.random() * 100));
+// }
+
+// function calculateAverage(grades) {
+// return Math.floor(grades.reduce((sum, grade) => sum + grade) / grades.length);
+// }
+
+// function assignLetterGrades(grades) {
+// return grades.map(grade => {
+// if (grade >= 80) return 'A';
+// if (grade >= 60) return 'B';
+// if (grade >= 40) return 'C';
+// if (grade >= 20) return 'D';
+// return 'E';
+// });
+// }
+
+// function displayResults(grades, letterGrades) {
+// grades.forEach((grade, index) => {
+// printGrades[index].textContent = `Студент ${index + 1}, баллы: ${grade}, буквенная оценка: ${letterGrades[index]}`;
+// });
+
+// avg.textContent = `Средний балл: ${calculateAverage(grades)}`;
+// maxGradePrint.textContent = `Максимальный балл: ${Math.max(...grades)}`;
+// minGradePrint.textContent = `Минимальный балл: ${Math.min(...grades)}`;
+// positiveGradesPrint.textContent = `Количество положительных оценок: ${grades.filter(grade => grade >= 60).length}`;
+// negativeGradesPrint.textContent = `Количество отрицательных оценок: ${grades.filter(grade => grade < 60).length}`;
+// }
+
+// const grades = generateGrades();
+// const letterGrades = assignLetterGrades(grades);
+
+// displayResults(grades, letterGrades);

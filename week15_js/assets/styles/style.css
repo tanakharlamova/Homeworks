@@ -1,0 +1,11 @@
+h1, h2, p {
+    font-family: "Montserrat", serif;
+}
+.container{
+    background: blanchedalmond;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
