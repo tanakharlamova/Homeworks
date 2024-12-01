@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <form name="formOne">
+        <div class="form_one">
+            <label for="nameOne" class="form_label">Имя:</label>
+            <input id="nameOne" type="text" name="nameOne" placeholder="Введите имя" minlength="2" maxlength="20" class="form_input" required/>
+            <p id="errorName" class="errorMsg none"></p>
+        </div>
+
+        <div class="form_one">
+            <label for="emailOne" class="form_label">Email:</label>
+            <input id="emailOne" type="text" name="emailOne" placeholder="Введите емэйл" class="form_input" required/>
+            <p id="errorEmail" class="errorMsg none"></p>
+        </div>
+
+        <div class="form_one">
+            <label for="ageOne" class="form_label">Возраст:</label>
+            <input id="ageOne" type="number" name="ageOne" placeholder="Введите возраст" class="form_input" required/>
+            <p id="errorAge" class="errorMsg none"></p>
+        </div>
+
+        <div class="form_one">
+            <label class="form_label">Пол:</label> 
+                <div class="terms">
+                    <input type="radio" name="genderOne"/><span>Мужской</span>
+                </div>
+                <div class="terms">
+                    <input type="radio" name="genderOne"/><span>Женский</span>
+                </div>
+            <p id="errorGender" class="errorMsg none"></p>
+        </div>
+        
+        <div class="form_one">
+            <label class="form_label" for="selectOccupation">Профессия:</label>
+            <select name="selectOccupation" id="selectOccupation">
+                <option value="occupOne">Врач</option>
+                <option value="occupTwo">Программист</option>
+                <option value="occupThree">Учитель</option>
+                <option value="occupFour">Дизайнер</option>
+                <option value="occupFive">Инженер</option>
+                <option value="occupSix">Продавец</option>
+                <option value="occupSeven">Другое</option>
+            </select>
+            <p id="errorOccup" class="errorMsg none"></p>
+        </div>
+
+        <div class="form_one">
+            <label for="passwordOne" class="form_label">Пароль:</label>
+            <input id="passwordOne" type="password" name="passwordOne" minlength="8" placeholder="Введите пароль" class="form_input" required/>
+            <div class="terms"><input type="checkbox" name="showPassword" onclick="showPassword()">Показать пароль
+                </div>
+            <p id="errorPassword" class="errorMsg none"></p>
+        </div>
+
+        <div class="form_one">
+            <div class="terms">
+                <input type="checkbox" name="checkboxOne" id="checkboxOne" class="form_checkbox" required/>
+                <label class="form_label" for="checkboxOne">Я согласен с условиями обработки данных</label>
+            </div>
+            <p id="errorTerms" class="errorMsg none"></p>
+        </div>
+
+        <button id="send">Отправить</button>
+    </form>
+
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
