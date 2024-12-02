@@ -92,7 +92,7 @@ function validateGender(genderOne){
 }
 
 function validatePassword(input){
-    showPassword(showPasswordBtn.checked);
+    
     const correctValue = input.value.trim();
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
     if (correctValue === ''){
@@ -107,20 +107,19 @@ function validatePassword(input){
     closeErrorMsg(input);
     
 }
-function showPassword(checked){
-    if (passwordOne.type === "password"){
+
+showPasswordBtn.addEventListener("change", () => {
+    if (showPasswordBtn.checked){
         passwordOne.type = "text"
-    }
-    else {
+    } else {
         passwordOne.type = "password"
     }
-}
+})
 
 
 function validateCheckbox(checkboxOne){
     if (!checkboxOne.checked){
         console.log("Please accept terms and conditions!")
-        //showErrorMsg(checkboxOne, "Please accept terms and conditions!")
         document.getElementById("errorTerms").textContent = "Пожалуйста, согласитесь с условиями обработки данных!";
         document.getElementById("errorTerms").classList.remove("none");
         return;
