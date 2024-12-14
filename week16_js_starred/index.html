@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Узнайте стоимость вашего автомобиля</h1>
+    <form name="formOne">
+        <div class="form_one">
+            <label for="brand">Марка автомобиля:</label>
+            <select name="brand" id="brand">
+                <option value="brandNo" selected>--Выберите из списка--</option>
+                <option value="brandRenault">Renault</option>
+                <option value="brandOpel">Opel</option>
+                <option value="brandMazda">Mazda</option>
+                <option value="brandJaguar">Jaguar</option>
+            </select>
+        </div>
+
+        <div class="form_one display_modelNo">
+            <label for="modelNo">Модель автомобиля:</label>
+            <select name="modelNo" id="modelNo">
+                <option value="carModelNo">--</option>
+            </select>
+        </div>
+        <div class="form_one display_modelRenault none" id="display_modelRenault">
+            <label for="modelRenault">Модель автомобиля:</label>
+            <select name="modelRenault" id="modelRenault">
+                <option value="carModelRenault">Clio</option>
+                <option value="carModelRenault">Duster</option>
+                <option value="carModelRenault">Megane</option>
+                <option value="carModelRenault">Trafic</option>
+                <option value="carModelRenault">Captur</option>
+                <option value="carModelRenault">Fluence</option>
+                <option value="carModelRenault">Talisman</option>
+                <option value="carModelRenault">Symbol</option>
+            </select>
+        </div>
+        <div class="form_one display_modelOpel none">
+            <label for="modelOpel">Модель автомобиля:</label>
+            <select name="modelOpel" id="modelOpel">
+                <option value="carModelOpel">Astra</option>
+                <option value="carModelOpel">Cascada</option>
+                <option value="carModelOpel">Zafira</option>
+                <option value="carModelOpel">Insignia</option>
+                <option value="carModelOpel">Corsa</option>
+                <option value="carModelOpel">Antara</option>
+                <option value="carModelOpel">Ampera</option>
+                <option value="carModelOpel">Adam</option>
+            </select>
+        </div>
+        <div class="form_one display_modelMazda none">
+            <label for="modelMazda">Модель автомобиля:</label>
+            <select name="modelMazda" id="modelMazda">
+                <option value="carModelMazda">CX-30</option>
+                <option value="carModelMazda">CX-70</option>
+                <option value="carModelMazda">3 Hatchback</option>
+                <option value="carModelMazda">3 Sedan</option>
+                <option value="carModelMazda">CX-5</option>
+                <option value="carModelMazda">CX-70</option>
+                <option value="carModelMazda">MX-5 Miata Sport</option>
+                <option value="carModelMazda">MX-5 Miata Grand</option>
+            </select>
+        </div>
+        <div class="form_one display_modelJaguar none">
+            <label for="modelJaguar">Модель автомобиля:</label>
+            <select name="modelJaguar" id="modelMazda">
+                <option value="carModelJaguar">F-Pace</option>
+                <option value="carModelJaguar">E-Pace</option>
+                <option value="carModelJaguar">I-Pace</option>
+                <option value="carModelJaguar">F-Type</option>
+                <option value="carModelJaguar">XE</option>
+                <option value="carModelJaguar">XF</option>
+                <option value="carModelJaguar">XJ</option>
+                <option value="carModelJaguar">Electric GT</option>
+            </select>
+        </div>
+
+
+        <div class="form_one">
+            <label for="fuel">Тип топлива:</label>
+            <div class="fuel_options">
+                <div class="option_flex"><input type="checkbox" name="fuel"><span>Бензин</span></div>
+                <div class="option_flex"><input type="checkbox" name="fuel"><span>Дизель</span></div>
+                <div class="option_flex"><input type="checkbox" name="fuel"><span>Газ</span></div>
+                <div class="option_flex"><input type="checkbox" name="fuel"><span>Электричество</span></div>
+            </div>
+        </div>
+
+        <div class="form_one">
+            <label for="capacity">Объем двигателя:</label>
+            <div class="capacity_options">
+                <input id="capacityInput" type="text" name="capacity" placeholder="Укажите объем в формате х.х">
+            </div>
+        </div>
+
+        <div class="form_one">
+            <label for="condition">Состояние автомобиля:</label>
+            <div class="condition_options">
+                <div class="option_flex"><input type="checkbox" name="condition"><span>Новый</span></div>
+                <div class="option_flex"><input type="checkbox" name="condition"><span>Подержаный</span></div>
+            </div>
+        </div>
+
+        <div class="form_one">
+            <label for="used">Количество владельцев автомобиля:</label>
+            <div class="used_options">
+                <div class="option_flex"><input type="checkbox" name="used"><span>1-2 владельца</span></div>
+                <div class="option_flex"><input type="checkbox" name="used"><span>Более 3 владельцев</span></div>
+            </div>
+        </div>
+
+        <div class="form_one">
+            <label for="payment">Способ оплаты:</label>
+            <div class="payment_options">
+                <div class="option_flex"><input type="checkbox" name="payment"><span>Карта</span></div>
+                <div class="option_flex"><input type="checkbox" name="payment"><span>Наличные</span></div>
+                <div class="option_flex"><input type="checkbox" name="payment"><span>Счет на юридическое лицо</span></div>
+            </div>
+        </div>
+    </form>
+    <div class="calcPrice">
+        <button class="calculateBtn" id="calculateBtn">Узнать стоимость</button>
+        <div class="finalPricePart">
+            <p class="finalPricePar" id="finalPricePar">Стоимость вашего автомобиля:</p>
+            <p class="finalPrice" id="finalPrice">6583</p>
+        </div>
+    </div>
+</div>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>

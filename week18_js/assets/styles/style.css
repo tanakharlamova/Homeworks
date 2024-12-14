@@ -1,0 +1,73 @@
+.container {
+    margin: auto;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    background-color: rgb(206, 242, 230);
+    padding: 40px;
+    border-radius: 10px;
+}
+.heading {
+    font-weight: 600;
+}
+.partOne {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 15rem;
+    font-family: "Montserrat", serif;
+    border-radius: 5px;
+    outline: rgb(209, 206, 206) 1px solid;
+}
+input:focus, input:hover, input:active {
+    outline: 1px solid green;
+}
+.addTask {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+button {
+    width: 5rem;
+    font-family: "Montserrat", serif;
+    background-color: rgb(246, 210, 163);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover, button:active {
+    outline: 1px solid green;
+}
+.partTwo {
+    display: flex;
+    flex-direction: column;
+}
+.centered {
+    text-align: center;
+}
+.clearAll {
+    align-self: flex-end;
+}
+.none {
+    display: none!important;
+}
+.noTasks {
+    color: gray;
+    margin-left: 5rem;
+}
+.taskList {
+    max-width: 40rem;
+    margin-left: 5rem;
+    min-height: 8rem;
+}
+input[type="checkbox"] {
+    padding: 0;
+    width: auto;
+}
+input[type="checkbox"]:checked, input[type="checkbox"]:hover {
+    accent-color: green;
+    filter: brightness(120%);
+}

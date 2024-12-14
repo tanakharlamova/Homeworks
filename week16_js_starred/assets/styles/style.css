@@ -1,0 +1,69 @@
+.container {
+    background-color: rgb(237, 234, 234);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Montserrat", serif;
+}
+h1 {
+    margin: 30px;
+}
+form {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+.form_one {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#capacityInput {
+    width: 25vw;
+    font-family: "Montserrat", serif;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+select{
+    font-family: "Montserrat", serif;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.fuel_options, .condition_options, .used_options, .payment_options {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*.option_flex > span {
+    color: red;
+}*/
+
+input[type="checkbox"]:checked, input[type="checkbox"]:hover {
+    outline: 2px solid green;
+    outline-style: solid;
+}
+
+.none {
+    display: none!important;
+}
+.calcPrice {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.calculateBtn {
+    font-family: "Montserrat", serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25vw;
+    height: 8vh;
+}
+.finalPrice {
+    text-align: end;
+}
