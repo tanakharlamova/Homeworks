@@ -1,0 +1,33 @@
+//variables
+@import './vars';
+@import './templates';
+
+
+h1 {
+    color: $colorHeader;
+    font-family: $font;
+}
+
+button {
+    @extend %button;
+}
+///наследование
+.container {
+    color: $colorHeader;
+    width: 80%;
+    margin: 0 auto;
+    .list{
+        font-family: $font;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+        button{
+            @include btn(150px,30px,red)
+        }
+    }
+}

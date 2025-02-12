@@ -1,0 +1,33 @@
+button {
+  width: 150px;
+  height: 25px;
+  border: none;
+  background-color: aqua;
+}
+
+h1 {
+  color: rgb(77, 77, 249);
+  font-family: "Gill Sans";
+}
+
+.container {
+  color: rgb(77, 77, 249);
+  width: 80%;
+  margin: 0 auto;
+}
+.container .list {
+  font-family: "Gill Sans";
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.container .list li a {
+  text-decoration: none;
+}
+.container .list button {
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

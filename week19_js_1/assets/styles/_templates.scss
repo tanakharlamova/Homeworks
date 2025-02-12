@@ -1,0 +1,15 @@
+//template
+%button {
+    width: 150px;
+    height: 25px;
+    border: none;
+    background-color: aqua;
+}
+///mixin
+@mixin btn($width,$height,$bg){
+    width: $width;
+    height: $height;
+    background-color: $bg;
+    border: none;
+    font-size: 16px;
+}
