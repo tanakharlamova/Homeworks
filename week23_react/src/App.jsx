@@ -33,17 +33,25 @@ const fares = [
   }
 ]
 
-function App(props) {
+
+
+function App() {
+
+
   const container = styles.container;
   return (
     <div className={container}>
       {
                 fares.map((fare, index) => (
-                  <Fare {...fare} key={index}/>
+                  <Fare 
+                  {...fare} 
+                  key={index}
+                  
+                  />
                 ))
             }
     </div>
   )
 }
 
-export default App
+export default App;

@@ -1,18 +1,24 @@
 import styles from '../Components/Fare.module.scss'
-
+import { useState } from 'react';
 
 export default function Fare(props){
    const { name, price, speed, limitation, classData} = props;
-    // const fare_card = styles.fare_card;
+    const [clicked, setClicked] = useState(false);
+
+    function setBiggerClass(){
+        setClicked(!clicked);
+    }
+   
+
    const pricefare = styles.pricefare;
    const currency = styles.currency;
    const price_nmb = styles.price_nmb;
    const duration = styles.duration;
    const speedfare = styles.speedfare;
    const limitations = styles.limitations;
+   const bigger = styles.bigger;
        return(
-        <div className={styles[classData]}>
-            {/* <div className={fare_card}> */}
+        <div className={clicked ? `${styles[classData]} ${bigger}` : `${styles[classData]}`} onClick={setBiggerClass}>
                 <h3>{name}</h3>
                 <div className={pricefare}>
                     <p className={currency}>руб </p>
@@ -21,7 +27,6 @@ export default function Fare(props){
                 </div>
                 <p className={speedfare}>{speed}</p>
                 <p className={limitations}>{limitation}</p>
-            {/* </div> */}
         </div>
     )
 }
