@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './Counter.css'
 
-function App() {
+function Counter() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
   )
 
   // второй вариант с функцией:
-  
+
   // useEffect(() => {
   //   handleClick();
   // }, [])
@@ -30,4 +30,4 @@ function App() {
   // )
 }
 
-export default App
+export default Counter;
