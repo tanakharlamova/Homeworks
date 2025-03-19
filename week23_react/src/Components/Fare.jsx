@@ -1,32 +1,29 @@
 import styles from '../Components/Fare.module.scss'
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-export default function Fare(props){
-   const { name, price, speed, limitation, classData} = props;
-    const [clicked, setClicked] = useState(false);
+export default function Fare({ name, price, speed, limitation, classData, isSelected, onClick }){
 
-    function setBiggerClass(){
-        setClicked(!clicked);
-    }
-   
-
-   const pricefare = styles.pricefare;
-   const currency = styles.currency;
-   const price_nmb = styles.price_nmb;
-   const duration = styles.duration;
-   const speedfare = styles.speedfare;
-   const limitations = styles.limitations;
-   const bigger = styles.bigger;
        return(
-        <div className={clicked ? `${styles[classData]} ${bigger}` : `${styles[classData]}`} onClick={setBiggerClass}>
+        <div className={isSelected ? `${styles[classData]} ${styles.bigger}` : `${styles[classData]}`}
+         onClick={onClick}>
                 <h3>{name}</h3>
-                <div className={pricefare}>
-                    <p className={currency}>руб </p>
-                    <p className={price_nmb}>{price}</p>
-                    <p className={duration}> /мес</p>
+                <div className={styles.pricefare}>
+                    <p className={styles.currency}>руб </p>
+                    <p className={styles.price_nmb}>{price}</p>
+                    <p className={styles.duration}> /мес</p>
                 </div>
-                <p className={speedfare}>{speed}</p>
-                <p className={limitations}>{limitation}</p>
-        </div>
-    )
+                <p className={styles.speedfare}>{speed}</p>
+                <p className={styles.limitations}>{limitation}</p>
+            </div>
+        )
 }
+
+Fare.propTypes = {
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    speed: PropTypes.string.isRequired,
+    limitation: PropTypes.string.isRequired,
+    classData: PropTypes.string.isRequired,
+    isSelected: PropTypes.bool.isRequired,
+    onClick: PropTypes.func.isRequired,
+};

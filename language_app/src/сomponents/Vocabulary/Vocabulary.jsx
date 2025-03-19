@@ -1,5 +1,5 @@
 import wordlist from '../../Data/data.json'
-//import styles from '../Vocabulary/Vocabulary.scss';
+import '../Vocabulary/Vocabulary.scss';
 
 
 const vocab = wordlist;
@@ -7,36 +7,36 @@ const vocab = wordlist;
 export default function Vocabulary(){
     return(
         <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>English</th>
-                        <th>Transcription</th>
-                        <th>Russian</th>
-                        <th>Tags</th>
-                        <th>#</th>
-                    </tr>
-                </thead>
+            
+                <div className='tablerow'>
+                    
+                    <div>#</div>
+                    <div>English</div>
+                    <div>Transcription</div>
+                    <div>Russian</div>
+                    <div>Tags</div>
+                    <div>#</div>
+                   
+                </div>
                 {vocab.map((word, index) => {
                         return(
-                            <tbody key={index}>
-                                <tr>
-                                    <td>{`${index + 1}`}</td>
-                                    <td>{word.english}</td>
-                                    <td>{word.transcription}</td>
-                                    <td>{word.russian}</td>
-                                    <td>{word.tags}</td>
-                                    <td>{word.tags_json}</td>
+                            <div className='tablerow' key={index}>
+                                <div>{`${index + 1}`}</div>
+                                <div>{word.english}</div>
+                                <div>{word.transcription}</div>
+                                <div>{word.russian}</div>
+                                <div>{word.tags}</div>
+                                <div>{word.tags_json}</div>
+                                <div className='table_buttons'>
                                     <button>Save</button>
                                     <button>Edit</button>
                                     <button>Delete</button>
-                                </tr>
-                            </tbody>
+                                </div>
+                            </div>
 
                         )})}
                 
-            </table>
+            
         </div>
     )
 }

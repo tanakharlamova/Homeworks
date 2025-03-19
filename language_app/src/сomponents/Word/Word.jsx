@@ -4,9 +4,7 @@ import wordlist from '../../Data/data.json'
 const wordsArr = wordlist;
 console.log(wordsArr)
 
-export default function Word( props ){
-
-const {english, transcription, russian, tags, tags_json} = props;
+export default function Word( {english, transcription, russian, tags, tags_json} ){
 
     return(
         <div className='cardstyle'>

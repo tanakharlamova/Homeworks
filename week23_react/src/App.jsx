@@ -1,6 +1,7 @@
 
 import styles from './App.module.scss'
 import Fare from './Components/Fare'
+import { useState } from 'react';
 
 const fares = [
   {
@@ -33,10 +34,10 @@ const fares = [
   }
 ]
 
-
+  
 
 function App() {
-
+  const [selectedFareIndex, setSelectedFareIndex] = useState(null);
 
   const container = styles.container;
   return (
@@ -44,9 +45,16 @@ function App() {
       {
                 fares.map((fare, index) => (
                   <Fare 
-                  {...fare} 
-                  key={index}
-                  
+                    key={index}
+                    {...fare} 
+                    isSelected={selectedFareIndex === index }
+                    onClick={()=> {
+                      if(selectedFareIndex === index){
+                        setSelectedFareIndex(null);
+                        return;
+                      }
+                      setSelectedFareIndex(index);
+                    }}
                   />
                 ))
             }
